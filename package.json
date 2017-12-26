@@ -1,0 +1,22 @@
+{
+  "name": "mpage",
+  "version": "1.0.0",
+  "description": "Personal webpage",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wymanrag/mPage.git"
+  },
+  "author": "Jose Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wymanrag/mPage/issues"
+  },
+  "homepage": "https://github.com/Wymanrag/mPage#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
