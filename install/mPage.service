@@ -1,0 +1,12 @@
+[Service]
+ExecStart=/usr/bin/node /usr/www/mPage/app.js
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=node-app-1
+User=pi
+Group=pi
+Environment=NODE_ENV=production PORT=3000
+
+[Install]
+WantedBy=multi-user.target
