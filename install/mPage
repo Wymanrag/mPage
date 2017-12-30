@@ -1,0 +1,18 @@
+#!/bin/sh
+#/etc/init.d/mPage
+export PATH=$PATH:/usr/lib/
+export NODE_PATH=$NODE_PATH:/usr/lib/node_modules
+
+case "$1" in
+start)
+exec forever --sourceDir=/home/pi/mPage -p /home/pi/mPage app.js  #scriptarguments
+;;
+stop)
+exec forever stop --sourceDir=/home/pi/mPage app.js
+;;
+*)
+echo "Usage: /etc/init.d/mPage {start|stop}"
+exit 1
+;;
+esac
+exit 0
